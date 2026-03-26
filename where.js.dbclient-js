@@ -1,0 +1,59 @@
+// Active: 1774550578581@@AlfredoBaca@null@admin
+db("aula").collection("personagens").find({
+    nome: "Monky D. luffy",
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $lg: 19,
+    }
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $lge: 19,
+    }
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $lt: 21,
+    }
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $lte: 21,
+    }
+});
+
+db("aula").collection("personagens").find({
+    idade: 19,
+    nome: "Monky D. luffy"
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+            $gt: 18,
+            $lt: 21,
+    },
+});
+
+db("aula").collection("personagens").find({
+        $or: [
+            { idade: { $lt: 20 } },
+            { idade: { $gt: 21 } },
+        ]
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $ne: 19,
+    },
+});
+
+db("aula").collection("personagens").find({
+    nome: {
+        $regex: "luffy",
+    },
+});

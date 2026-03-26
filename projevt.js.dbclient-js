@@ -1,0 +1,7 @@
+// Active: 1774550578581@@AlfredoBaca@null@admin
+db("aula").collection("personagens").find(
+    {},
+    {
+        nome: 1,
+    },
+);
