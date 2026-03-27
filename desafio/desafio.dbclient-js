@@ -1,0 +1,13 @@
+// Active: 1774550578581@@AlfredoBaca@null@admin
+db("aula").collection("personagens").aggregate([
+    {
+        $addFields: {
+        nomeCompleto: "$nome",
+    },
+},
+    {
+        $unset: "nome",
+
+    },
+
+]);

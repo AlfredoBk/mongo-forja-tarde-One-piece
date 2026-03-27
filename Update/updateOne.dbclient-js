@@ -1,0 +1,8 @@
+// Active: 1774550578581@@AlfredoBaca@null@admin
+db("aula").collection("personagens").updateOne(
+    { nome: "Kaido"},
+ {   
+    $set: {
+        fruta: "Uo Uo no Mi"
+    },
+});

@@ -1,0 +1,13 @@
+// Active: 1774550578581@@AlfredoBaca@null@admin
+db("aula").collection("personagens").insertMany([{
+nome: "Big Mom",
+fruta: "Soul",
+idade: 68,
+
+},
+{
+nome: "Kaido",
+fruta: "Dragão",
+idade: 59,
+},
+]);
